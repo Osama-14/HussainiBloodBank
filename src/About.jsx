@@ -1,12 +1,13 @@
-import React from 'react'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import web from "../src/images/bld.png";
+import Common from './Common'
 
-
-const Hom =() => {
-    return(
-        <>
-        <h1>Welcome about page</h1>
-         </>
-    );
-
+const About = () => {
+  return (
+    <>
+    <Common name='welcome to About page' imgsrc={web} visit='./contact' btname="Contact Now" />
+    </>
+  );
 };
-export default Hom;
+export default About;
