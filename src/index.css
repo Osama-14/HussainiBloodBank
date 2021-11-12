@@ -96,3 +96,9 @@
 .img-fluid{
  text-align: right;
 }
+
+
+.row{
+  display: flex;
+    justify-content: center;
+}
