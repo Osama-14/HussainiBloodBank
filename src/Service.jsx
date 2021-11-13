@@ -1,4 +1,5 @@
 import React from "react";
+import Sdata from "./Sdata";
 import Cards from "./Cards";
 
 const Service = () => {
@@ -11,11 +12,10 @@ const Service = () => {
         <div className="row">
           <div className="col-10 max-auto">
             <div className="row gy-4">
-              <div className="col-md-4 col-10 mx-auto">
-                  <Cards/>
-
-            </div>
-            </div>
+                {Sdata.map((val,ind) => {
+                  return <Cards key={ind} imgsrc={val.imgsrc} title={val.title} />;
+                })}
+              </div>
           </div>
         </div>
       </div>
