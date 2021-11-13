@@ -25,7 +25,7 @@ const Contact =() => {
 
     const formSub =(e) => {
         e.preventDefault();
-        alert(`${data.fullname}`)
+        alert(`My name is${data.fullname}, mobile number is ${data.phone}, email ${data.email}, Here is what I want to say ${data.msg}`)
         
     };
     
