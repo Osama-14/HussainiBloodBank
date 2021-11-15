@@ -38,6 +38,10 @@
 
 
 }
+.img-fluid {
+  max-width: 94%!important;
+  height: 76%!important;
+}
 
 @keyframes MoveUpDown {
   0%, 100% {
@@ -102,3 +106,6 @@
   display: flex;
     justify-content: center;
 }
+
+
+
