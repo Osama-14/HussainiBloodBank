@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../src/images/Husaini.png"
+import { Home, ThreeDRotation } from '@material-ui/icons';
+
 
 const Navbar = () => {
   return (
@@ -27,7 +29,8 @@ const Navbar = () => {
                         aria-current="page"
                         to="/"
                       >
-                        Home
+                       <Home />
+                       <span>Home</span>
                       </NavLink>
                     </li>
                     <li className="nav-item">
