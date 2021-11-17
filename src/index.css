@@ -5,16 +5,42 @@
   font-family: sans-serif;
 }
 .navbar{
-  background-color: #fff !important;
+  background-color: rgb(255, 0, 0) !important;
 }
 .navbar-brand {
-  font-size: 1.9rem !important;
+  font-size: 1.0rem !important;
   color: #565387 !important;
 }
-.nav-item a {
+.forDesign{
+  font-weight: 700;
+  position: relative;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #000;
   font-size: 1.3rem;
-  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  padding: 0 30px;
+
 }
+
+.forDesign::after{
+  content: "";
+  position: absolute;
+  background-color: #fa2a55;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+  
+}
+.forDesign:hover{
+  color: rgb(223, 56, 56);
+}
+.forDesign:hover:after{
+  width: 100%;
+}
+
 .nav-link{
   font-weight: bold;
   /* border-bottom: 1px solid #565387; */
@@ -22,32 +48,34 @@
 }
 
 .nav-link:hover{
-  color: #3498db !important;
+  color: #666400 !important;
 }
 .collapse{
   justify-content: flex-end!important;
 }
 .img-fluid {
-  max-width: 100%!important;
-  height: 87%!important;
+  max-width: 60%!important;
+  height: 50% !important;
+  /* top: 10px !important; */
+  margin-top: 10rem;
+  
+ 
+
 }
 
 .img-fluid{
-  animation: MoveUpDown 2s linear infinite;
+  animation: MoveUpDown 3s linear infinite;
   position: relative;
 
 
 }
-.img-fluid {
-  max-width: 94%!important;
-  height: 76%!important;
-}
+
 
 @keyframes MoveUpDown {
   0%, 100% {
     bottom: 0;
   }
-  50% {
+  70% {
     bottom: 17px;
   }
 }

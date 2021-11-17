@@ -27,24 +27,24 @@ const Navbar = () => {
                       <NavLink activeClassName='nav-link'
                         className="nav-link active"
                         aria-current="page"
-                        to="/"
+                        to="/" className="forDesign"
                       >
-                       <Home />
+                       <Home color="secondary" />
                        <span>Home</span>
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink activeClassName='nav-link' className="nav-link" to="/service">
+                      <NavLink activeClassName='nav-link' className="nav-link" to="/service" className="forDesign">
                         Services
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink activeClassName='nav-link' className="nav-link" to="/about">
+                      <NavLink activeClassName='nav-link' className="nav-link" to="/about" className="forDesign" >
                         About
                       </NavLink>
-                    </li>{" "}
+                    </li>
                     <li className="nav-item">
-                      <NavLink activeClassName='nav-link' className="nav-link" to="/contact">
+                      <NavLink activeClassName='nav-link' className="nav-link" to="/contact" className="forDesign">
                         Contact
                       </NavLink>
                     </li>
